@@ -35,7 +35,7 @@ export default function Buy() {
             <div className="row d-flex flex-row">
                 {buyItems.map(({ image, title }) => {
                     return (
-                        <div className="col d-flex flex-row justify-content-center align-items-center">
+                        <div className="col d-flex flex-row justify-content-center align-items-center" key={title}>
                             <img src={image} alt="" />
                             <h3>{title}</h3>
                         </div>
