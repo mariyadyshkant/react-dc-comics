@@ -2,17 +2,21 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* img {
-    width: 100%;
-    margin-right: 1rem;
+/* #root {
+    max-width: 1280px;
+    text-align: center;
 } */
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 .jumbotron-container {
     height: 400px;
     overflow: hidden;
+
 }
 
 .jumbotron {
@@ -38,20 +42,18 @@ main {
 .container {
     width: 80%;
     margin: 0 auto;
-    padding: 2rem;
 }
 
 .row {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 1rem;
     padding: 1rem;
 }
 
 .col-6 {
-    width: calc(100% / 12 * 6);
+    width: calc(100% / 6 - 1rem);
 }
 
 header {
@@ -78,5 +80,34 @@ ul {
         color: black;
         text-transform: uppercase;
         text-decoration: none;
+    }
+}
+
+.buy_section {
+    background-color: deepskyblue;
+    color: white;
+}
+
+.buy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 1.5rem;
+    padding: 1rem 0;
+
+    .col {
+        display: flex;
+        align-items: center;
+        text-wrap: nowrap;
+        gap: 1rem;
+    }
+
+    img {
+        height: 100px;
+    }
+
+    img#5 {
+        width: 80px;
     }
 }
