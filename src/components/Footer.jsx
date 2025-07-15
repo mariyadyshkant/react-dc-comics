@@ -1,7 +1,38 @@
+import footerLinks from "../assets/footer-links";
+import dcLogoBg from "/public/img/dc-logo-bg.png"
+
 export default function Footer() {
     return (
-        <footer className="container mx-auto px-4 py-8 bg-black text-white">
-            <p className="">Footer Content</p>
+        <footer>
+            <img className="logo-bg" src={dcLogoBg} alt="" />
+            <div className="container">
+                <div className="footer-row">
+                    {footerLinks.map(({ title, links, shop }) =>
+                        <div className="col" key={title}>
+                            <h3>{title}</h3>
+                            <ul>
+                                {links.map(({ name, url }) =>
+                                    <li>
+                                        <a href={url}>{name}</a>
+                                    </li>
+                                )}
+                            </ul>
+                            {shop &&
+                                shop.map(({ title, links }) =>
+                                    <><h3>{title}</h3>
+                                        <ul>
+                                            {links.map(({ name, url }) =>
+                                                <li>
+                                                    <a href={url}>{name}</a>
+                                                </li>
+                                            )}
+                                        </ul>
+                                    </>
+                                )}
+                        </div>
+                    )}
+                </div>
+            </div>
         </footer>
     )
 }
