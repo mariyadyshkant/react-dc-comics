@@ -7,6 +7,7 @@ import Main from './components/Main.jsx'
 import Buy from './components/Buy.jsx'
 import Footer from './components/Footer.jsx'
 import Socials from './components/Socials.jsx'
+import BtnCurrentSeries from './components/Btn-current-series.jsx'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     <>
       <Header />
       <Jumbotron />
+      <BtnCurrentSeries />
       <Main />
       <Buy />
       <Footer />
