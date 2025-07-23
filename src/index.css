@@ -164,3 +164,39 @@ footer {
 
   }
 }
+
+.socials_bar {
+  background-color: rgb(46, 46, 46);
+
+}
+
+.socials-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.sign_up {
+  background-color: transparent;
+  color: white;
+  border: 2px solid deepskyblue;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.right_side_socials {
+  display: flex;
+  align-items: center;
+}
+
+.follow {
+  font-weight: bold;
+  margin-right: 1rem;
+  color: deepskyblue;
+}
+
+.socials {
+  display: flex;
+  gap: 0.5rem;
+}
